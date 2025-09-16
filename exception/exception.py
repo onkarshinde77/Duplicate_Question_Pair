@@ -1,6 +1,6 @@
 import sys
 
-class CustomException:
+class CustomException(Exception):
     def __init__(self,err_mess,error_detail:sys):
         self.err_mess = err_mess
         _,_,error_tb = error_detail.exc_info()

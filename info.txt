@@ -1,0 +1,27 @@
+# Increase the Accuracy
+
+1. Increase the Data.
+(If you dont have sutaible configuration then follows given method to train) - Increamental Learnning
+Incremental Learning (a.k.a. Online Learning)
+
+***Definition:
+Incremental learning means training a model step by step, with small batches of new data, instead of training from scratch on the entire dataset every time.
+The model remembers old knowledge and learns new patterns without forgetting.
+***
+    a) Clean text in chunks rather than loading all at once. Use Pandas chunksize to read large CSV in parts:
+    import pandas as pd
+
+    ```
+    for chunk in pd.read_csv("quora_data.csv", chunksize=50000):
+        # preprocess and train batch by batch
+        print(chunk.shape)
+    ```
+    b) Use vaex/Dask library 
+    c) use tensorflow/keras
+
+2. Apply more preprocessing like stemming 
+3. Apply more algorithm with hyperparameter tuning
+    - also search about cross validation
+4. create more features
+5. use different text representation
+6. try to deep leaning approach

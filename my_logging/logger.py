@@ -5,7 +5,7 @@ import os
 
 # this is only file name ( for unique name used the current date & time)
 # strftime - string format time
-LOG_FILE = f"{datetime.now().strftime("%d%m%y%H%M%S")}"
+LOG_FILE = f"{datetime.now().strftime('%d%m%Y%H%M%S')}"
 
 # creating log directory and addiong log file
 log_path = os.path.join(os.getcwd(),"logs",LOG_FILE)

@@ -1,5 +1,6 @@
 # I added
 Data/
+logging/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
