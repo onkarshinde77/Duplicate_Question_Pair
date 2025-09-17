@@ -52,9 +52,6 @@ checkBtn.addEventListener('click', async () => {
 
         const data = await response.json();
 
-        // Display result - IMPORTANT: Check the actual response format from your API
-        // If your API returns { "result": "Duplicate" } then this is correct
-        // If it returns something else like { "prediction": "Duplicate" }, adjust accordingly
         resultDiv.textContent = `Result: ${data.result}`;
         resultDiv.className = 'result ' + (data.result === 'Duplicate' ? 'duplicate' : 'not-duplicate');
 
