@@ -31,4 +31,4 @@ def predict(data:InputData):
         except Exception as e:
             raise CustomException(e,sys)
     
-    return {"prediction" : pred}
+    return {"result": pred}
