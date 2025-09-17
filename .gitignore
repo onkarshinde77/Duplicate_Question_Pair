@@ -1,11 +1,13 @@
 # I added
 model2/
+models/
 Data/
 logging/
 *.pkl
 *.h5
 *.pt
 *.onnx
+model.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
