@@ -20,8 +20,8 @@ const checkBtn = document.getElementById('check-btn');
 const resultDiv = document.getElementById('result');
 
 checkBtn.addEventListener('click', async () => {
-    const question1 = document.getElementById('question1').value;
-    const question2 = document.getElementById('question2').value;
+    const question1 = document.getElementById('question1').value.trim();
+    const question2 = document.getElementById('question2').value.trim();
 
     if (!question1 || !question2) {
         resultDiv.textContent = 'Please enter both questions!';
@@ -52,7 +52,9 @@ checkBtn.addEventListener('click', async () => {
 
         const data = await response.json();
 
-        // Display result
+        // Display result - IMPORTANT: Check the actual response format from your API
+        // If your API returns { "result": "Duplicate" } then this is correct
+        // If it returns something else like { "prediction": "Duplicate" }, adjust accordingly
         resultDiv.textContent = `Result: ${data.result}`;
         resultDiv.className = 'result ' + (data.result === 'Duplicate' ? 'duplicate' : 'not-duplicate');
 
