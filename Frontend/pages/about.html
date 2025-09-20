@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Duplicate Question Pair Detector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-clone logo-icon"></i>
+            <span>DupliCheck</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="pages/Me.html"><i class="fas fa-chevron-right"></i> Me</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>
+                This project aims to detect whether two questions asked on Quora are <strong>duplicate</strong> or
+                <strong>not duplicate</strong>.
+                Detecting duplicates improves user experience by avoiding repeated answers and maintaining clean
+                content.
+            </p>
+        </section>
+
+        <section class="challenges">
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Dataset Size: The Quora dataset contains over 500,000 rows, which is difficult to train on a normal
+                    laptop.</li>
+                <li>Hardware Limitation: My laptop has only 8GB RAM, so training large data caused memory issues.</li>
+                <li>Training Time: Model training took a long time on limited hardware.</li>
+                <li>Accuracy Limitation: Model could not achieve very high accuracy due to hardware constraints.</li>
+                <li>Using Google Colab:
+                    <ul>
+                        <li>Memory usage went above 100+ GB while adding features.</li>
+                        <li>Sessions frequently disconnected.</li>
+                        <li>Paid subscription was required for TPU support.</li>
+                    </ul>
+                </li>
+                <li>Final Decision: Kept and used the first trained model in the project.</li>
+            </ul>
+        </section>
+
+        <!-- <section class="connect">
+            <h2>Connect with Me</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/onkarshinde77" target="_blank">LinkedIn</a></li>
+                <li><a href="https://medium.com/@onkarshinde77" target="_blank">Medium Blog</a></li>
+            </ul>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-clone footer-logo-icon"></i>
+                    <span>DupliCheck</span>
+                </div>
+                <p class="footer-description">We provide advanced AI-powered tools to detect duplicate questions and
+                    improve content quality across platforms.</p>
+                <div class="social-icons">
+                    <a href="https://x.com/onkarshinde77"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/onkar.ss77/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/onkarshinde77"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/onkarshinde77"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="pages/Me.html"><i class="fas fa-chevron-right"></i> Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> D Y Patil College of Engineering Akurdi,
+                        Pune</li>
+                    <li><i class="fas fa-phone"></i> +91 9309313545</li>
+                    <li><i class="fas fa-envelope"></i> shindeonkar704@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 DupliCheck. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
