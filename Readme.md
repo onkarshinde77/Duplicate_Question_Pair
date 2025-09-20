@@ -21,7 +21,6 @@ Both mean the same thing, but Quora needs to detect them as **duplicates** to av
   - Each pair is labeled as:  
     - `1 = duplicate`  
     - `0 = not duplicate`.  
-
 ---
 
 ## ⚙️ Approach  
@@ -36,9 +35,9 @@ Both mean the same thing, but Quora needs to detect them as **duplicates** to av
 - TF-IDF, Word2Vec, and GloVe embeddings.  
 
 ### 🔹 Modeling  
-- **Classical ML models**: Logistic Regression, Random Forest, XGBoost.  
-- **Deep Learning models**: LSTM, GRU, Siamese Network.  
-- **Transformers**: Fine-tuned BERT for best performance.  
+- **Classical ML models**: Random Forest, XGBoost.  
+- **Deep Learning models**: LSTM
+- **Transformers**: Fine-tuned BERT for best performance.
 
 ### 🔹 Evaluation  
 - Metrics used: Accuracy, Precision, Recall, F1-score, ROC-AUC.  
@@ -46,14 +45,13 @@ Both mean the same thing, but Quora needs to detect them as **duplicates** to av
 ---
 
 ## 🎯 Outcome  
-- A trained model that can detect duplicate questions with **high accuracy**.  
+- A trained model that can detect duplicate questions with **83% Accuracy**.  
 - Comparison between **classical NLP approaches** and **modern deep learning methods**.  
 - Hands-on experience with **text preprocessing, embeddings, and sequence models**.  
-
 ---
 
 ## 🚀 Future Work  
-- Deploy model as a **web app** (Flask / Django / Streamlit).  
+- Deploy model as a **web app** (Flask / Django / ).  
 - Improve results with **ensemble techniques**.  
 - Use **cross-lingual embeddings** to handle multilingual questions.  
 
@@ -63,11 +61,26 @@ Both mean the same thing, but Quora needs to detect them as **duplicates** to av
 - Python  
 - NLTK, SpaCy  
 - Scikit-learn  
-- Gensim (Word2Vec)  
-- TensorFlow / PyTorch  
-- HuggingFace Transformers  
-
+- bs4
+- 	Bag of Words (BoW)
+- fuzzywuzzy
+- RandomForestClassifier
 ---
+
+## ⚠️ **Challenges Faced**  
+
+- **Dataset Size**: The Quora dataset contains over **500,000 rows**, which is difficult to train on a normal laptop.  
+- **Data Cleaning**
+- **To increase accuracy i create more feature from old features (which is 22 features)**
+- **Hardware Limitation**: My laptop has only **8GB RAM**, so training large data caused memory issues.  
+- **Training Time**: Model training took a long time on limited hardware, reducing the scope for experimentation.  
+- **Accuracy Limitation**: Due to hardware constraints, the model could not achieve very high accuracy.  
+- **Using Google Colab**:  
+  - Colab initially helped, but while adding more features and improving accuracy, memory usage went above **100+ GB**.  
+  - Sessions frequently **disconnected**, causing loss of progress.  
+  - After disconnections, Colab required a **paid subscription** to access **TPU support** for retraining.  
+- **Final Decision**: Due to these issues, I decided to keep and use my **first trained model** in this project.
+
 
 ## 🙌 Acknowledgements  
 - [Quora Question Pairs Dataset - Kaggle](https://www.kaggle.com/c/quora-question-pairs)  
@@ -76,3 +89,15 @@ Both mean the same thing, but Quora needs to detect them as **duplicates** to av
 ## 🔗 Connect with Me
 - 💼 [LinkedIn](https://www.linkedin.com/in/onkarshinde77)  
 - ✍️ [Medium Blog](https://medium.com/@onkarshinde77)  
+
+
+## ⚠️ **Note**  
+
+Training this model requires a **high-performance laptop or computer**, which I currently do not have.  
+Because of this limitation, the model may not provide very high accuracy.  
+
+I trained the model on **Google Colab**, but while trying to improve accuracy and create more features, Colab consumed over **100+ GB RAM** and often disconnected.  
+When I attempted to reconnect and train again, Colab required a **paid subscription** to access TPU support.  
+
+Therefore, I have included my **initial trained model (82% accuracy)** in this project.
+
